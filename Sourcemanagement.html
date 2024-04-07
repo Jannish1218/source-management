@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Subscription Management</h1>
+    <div id="subscriptionForm">
+        <h2>Add New Subscription</h2>
+        <form id="addSubscriptionForm">
+            <input type="text" id="customerName" placeholder="Customer Name" required>
+            <input type="text" id="customerID" placeholder="Customer ID" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <select id="subscriptionType" required>
+                <option value="">Select Type</option>
+                <option value="Monthly">Monthly</option>
+                <option value="Yearly">Yearly</option>
+            </select>
+            <input type="date" id="dueDate" required>
+            <button type="submit">Add Subscription</button>
+        </form>
+    </div>
+    <div id="subscriptionList">
+        <h2>Subscription List</h2>
+        <table id="subscriptionsTable">
+            <thead>
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Customer ID</th>
+                    <th>Amount</th>
+                    <th>Type</th>
+                    <th>Due Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="subscriptionsBody"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

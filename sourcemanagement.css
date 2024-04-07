@@ -1,0 +1,48 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#subscriptionForm, #subscriptionList {
+    margin-bottom: 40px;
+}
+
+#addSubscriptionForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, select, button {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#subscriptionsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#subscriptionsTable th, #subscriptionsTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#subscriptionsTable th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+}
